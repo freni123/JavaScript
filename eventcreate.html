@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div class="box-container">
+    <div class="box box1" onmouseover="changeBoxSize(this)" onmouseout="resetSize(this)"></div>
+
+    <div class="box box2" onmouseover="changeBoxColor(this)" onmouseout="resetColor(this)"></div>
+
+    <div class="box box3" onmouseover="imgBoxChange(this)" onmouseout="resetImg(this)">
+      <p id="img-content"></p>
+    </div>
+  </div>
+  <button id="autoButton" onclick="buttonClick()">Auto Click</button>
+    
+  <script src="js/script.js"></script>
+</body>
+</html>
